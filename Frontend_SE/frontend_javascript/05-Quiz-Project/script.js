@@ -1,16 +1,14 @@
-
-
-
+// 
 // TODO 1: Declare & assign variables pointing to the corresponding element(s)
 
 // statement should be the "statement" div
 const statement = document.getElementById('statement');
-
-
-
-
 // optionButtons should be all the elements within the "options" div
 const optionButtons = document.querySelectorAll('#options button')
+
+
+// the buttons 
+
 
 // explanation should be the "explanation" div
 const explanation = document.getElementById('#explanation');
@@ -36,9 +34,28 @@ statement.textContent = fact.statement;
 // enable(button) should remove the attribute "disabled" from the button element
 
 
+const buttons = document.getElementsByName("true")
+const button = buttons[0];
+
+// taking individual button elements
+const enable = (button) => {
+    button.removeAttribute("disabled");
+}
+
+const disable = (button) => {
+   button.setAttribute("disabled","");
+    
+}
+
+// button.enable();
 
 // TODO 5: Declare an isCorrect function that compares a guess to the right answer
 // isCorrect(guess) should return true if the guess matches the fact's answer
+
+const isCorrect = guessString => {
+    return guessString === fact.answer.toString();
+}
+
 
 
 
