@@ -22,3 +22,18 @@
 // Strings in javascript are immutable - the values inside them can not be changed  
 // Arrays in javascript are mutuable - the values inside them can be changed 
 
+// use immutable things in javascript as much as possible 
+
+
+// varibales and Arrays
+
+let array1 = [1,2,3]
+array2 = array1;
+
+console.log(array1)
+console.log(array2)
+
+array1[1] = 4;
+
+console.log(array1)
+console.log(array2)
