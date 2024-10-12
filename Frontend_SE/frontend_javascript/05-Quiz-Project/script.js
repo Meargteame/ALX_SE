@@ -34,8 +34,12 @@ statement.textContent = fact.statement;
 // enable(button) should remove the attribute "disabled" from the button element
 
 
-const buttons = document.getElementsByName("true")
-const button = buttons[0];
+const trueButtons = document.getElementsByName("true")
+const buttonTrue = trueButtons[0];
+
+const falseButtons = document.getElementsByClassName("false")
+const buttonFalse = falseButtons[0];
+
 
 // taking individual button elements
 const enable = (button) => {
@@ -58,6 +62,26 @@ const isCorrect = guessString => {
 
 
 
+// handling events 
+buttonTrue.addEventListener('click',(event)=> {
+    let button = event.target.textContent.toUpperCase()
+    event.target.textContent = button;
+})
+
+
+let h1 = document.querySelector('h1');
+console.log(h1);
+
+
+h1.addEventListener('mouseover',(event) => {
+   let el = event.target.textContent ='Hovering';;
+   console.log(el);
+
+})
+h1.addEventListener('mouseout', (event) =>{
+    let el = event.target.textContent = 'Quize.js'
+    console.log(el);
+})
 
 // TODO 6A: Use a for loop to add a click event listener to each of the optionButtons
         // TODO 6B: Within the event handler function, display the fact's explanation by setting the text of the explanation element
