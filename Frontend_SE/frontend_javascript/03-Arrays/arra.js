@@ -14,7 +14,8 @@
  * .sort() - sorts the values of the arrays
  * .join("value") - joins the array values  do to the indicated thingy in the join() method 
     ex : join(&) , join(" ")
- * .concat("value") - concatenates a value with the array.
+ * .concat("value") - concatenates a value with the array. and returns a new concatenated array 
+     Means it does not change the old array - instead it creates a new array container .
  */
 
 
