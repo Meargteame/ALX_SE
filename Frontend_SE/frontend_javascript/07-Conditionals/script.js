@@ -25,24 +25,63 @@ function longerName(firstName, lastName){
         console.log(firstName ,"is equal to ",lastName);
     }
 }
-longerName("ABEBE","ABE");
+// longerName("ABEBE","ABE");
 
 
 // exercise 2
 function isEmpty(array){
     if(array.length === 0){
-        console.log("Yes It is Empty");
+        console.log("Is  empty");
+      return true;
     }
-    else{
-        console.log("No it is not Empty");
+    else {
+        console.log("IS NOT EMPTY");
+        return false;
     }
 }
-isEmpty([1,2,3]);
-isEmpty([]);
+// console.log(
+// isEmpty([1,2,3])
+// )
+// console.log([]);
+
+// isEmpty([]);
 
 
 
 // exercise 3 
+function isTruthyFalsy(array){
 
+    if(isEmpty()){
+        return "Truthy ";
+    }
+    else{
+        return "Falsy";
+    }
+}
 
+// isTruthyFalsy([1,2]);
+// isTruthyFalsy([]);
+// isTruthyFalsy("");
 // compare(2,2);
+
+
+// Logical and ternary operators
+
+const age1 = 12;
+const age2 = 20;
+
+const isEligible = (age) => {
+    const variable = (age) > 18 ? console.log("You are allowed to Drivr Licence!") : console.log("You are not eligible for the driver licence !");
+}
+
+// isEligible(age1);
+// isEligible(age2);
+
+
+// LOOPS 
+// lets  run the same chunk of code multiple time.
+
+//for loop 
+// for of  - 
+    // => also to iterate over characters in a string .
+// for in 
