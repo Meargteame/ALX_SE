@@ -14,5 +14,35 @@ function compare(x,y){
     }
 }
 
+// exercise 1 
+function longerName(firstName, lastName){
+    if( firstName > lastName){
+        console.log(firstName, "is Longer than ", lastName);
+    }
+    else if( firstName < lastName){
+        console.log(firstName, "is not longer than",lastName);
+    }else{
+        console.log(firstName ,"is equal to ",lastName);
+    }
+}
+longerName("ABEBE","ABE");
 
-compare(2,2);
+
+// exercise 2
+function isEmpty(array){
+    if(array.length === 0){
+        console.log("Yes It is Empty");
+    }
+    else{
+        console.log("No it is not Empty");
+    }
+}
+isEmpty([1,2,3]);
+isEmpty([]);
+
+
+
+// exercise 3 
+
+
+// compare(2,2);
