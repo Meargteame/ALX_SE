@@ -11,4 +11,9 @@
     - fullfilled : ("AKA RESOLVED") - : finally got the value, all done .
     - rejected :sorry couldn't get the value , all done .
     => It takes time for promises to resolve , so they are "Asynchronus"
+
+    - await - lets us tell js to stop and await for an asynchronos operation to finish .
+    - In the case of a promise, it waits for it to resolve , before continuing with our code .
+    - The Response Body - Contains data we care about .
+    - But we have to read the data somehow.
     
