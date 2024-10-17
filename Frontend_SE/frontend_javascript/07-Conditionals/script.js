@@ -85,3 +85,20 @@ const isEligible = (age) => {
 // for of  - 
     // => also to iterate over characters in a string .
 // for in 
+
+
+
+// while loops 
+
+// let numberOfI = 0;
+// while(numberOfI <= 20)
+// {
+//     console.log(numberOfI);
+//     numberOfI++;
+// }
+
+
+
+while(true){
+console.log("Always true");
+}
