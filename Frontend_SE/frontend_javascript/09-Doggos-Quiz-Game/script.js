@@ -45,8 +45,19 @@ function getMultipleChoices(n, correctAnswer, array) {
 // TODO 2
 // Given a URL such as "https://images.dog.ceo/breeds/poodle-standard/n02113799_2280.jpg"
 // return the breed name string as formatted in the breed list, e.g. "standard poodle"
+let url =  "https://images.dog.ceo/breeds/poodle-standard/n02113799_2280.jpg";
 function getBreedFromURL(url) {
     // The string method .split(char) may come in handy
+
+    let unsplitBreed = url.split("/")[4];
+    // let  splitBreed = unsplitBreed.split("-").join(" ");
+
+    let [breed,subBreed] = unsplitBreed.split("-");
+
+     return [subBreed,breed].join(" ").trim();
+
+
+    
     // Try to use destructuring as much as you can
     
 }

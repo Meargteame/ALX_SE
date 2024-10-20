@@ -16,4 +16,8 @@
     - In the case of a promise, it waits for it to resolve , before continuing with our code .
     - The Response Body - Contains data we care about .
     - But we have to read the data somehow.
-    
+     
+        -> calling .json() => method on the response parses it's body as a JSON object 
+        response.json()
+        -> But that gives us another promise!
+        
